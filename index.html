@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Potent Hygiene — Comfort, care & your natural self</title>
+<meta name="description" content="Organic pads, menstrual cups, panty liners, pee funnels and travel hygiene essentials by Potent Hygiene, Jaipur.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff8f6; --card:#ffffff; --blush:#fde4e4; --rose:#e8588a; --rose-d:#c63f72;
+  --teal:#13808a; --teal-d:#0d5f67; --ink:#2b2230; --mute:#7a6c78; --line:#f1dcdc;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.12}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.bar{background:var(--teal);color:#fff;text-align:center;font-size:13px;padding:8px 12px}
+header{position:sticky;top:0;z-index:30;background:rgba(255,248,246,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.nav img.logo{height:40px}
+.links{display:flex;gap:26px;font-size:15px;font-weight:500}
+.links a:hover{color:var(--rose-d)}
+.cartbtn{background:var(--ink);color:#fff;border-radius:99px;padding:10px 18px;font-weight:500;font-size:14px;display:flex;gap:8px;align-items:center}
+.cartbtn b{background:var(--rose);border-radius:99px;min-width:22px;height:22px;display:grid;place-items:center;font-size:12px}
+.btn{display:inline-block;background:var(--rose);color:#fff;padding:14px 28px;border-radius:99px;font-weight:600;font-size:15px;transition:.2s}
+.btn:hover{background:var(--rose-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--blush);color:var(--rose-d);font-weight:600;font-size:13px;padding:6px 14px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5.4vw,66px);margin-bottom:18px}
+.hero h1 em{color:var(--rose);font-style:italic}
+.hero p{color:var(--mute);font-size:18px;max-width:480px;margin-bottom:28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;margin-top:30px;font-size:13px;color:var(--mute);flex-wrap:wrap}
+.trust span::before{content:"✓ ";color:var(--teal);font-weight:700}
+.herovis{position:relative;background:var(--blush);border-radius:40px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.herovis img{border-radius:20px;width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.herovis img:nth-child(2){margin-top:34px}
+.badge{position:absolute;left:-14px;bottom:30px;background:#fff;border-radius:16px;padding:12px 16px;font-size:13px;box-shadow:0 6px 18px rgba(80,30,60,.12);font-weight:600}
+.badge small{display:block;color:var(--mute);font-weight:400}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 10px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;align-items:center;gap:14px;transition:.2s;text-align:left}
+.cat:hover{border-color:var(--rose);transform:translateY(-3px)}
+.cat img{width:60px;height:60px;border-radius:14px;object-fit:cover}
+.cat b{display:block;font-size:15px}.cat small{color:var(--mute)}
+section{padding:64px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.sh h2{font-size:clamp(28px,3.6vw,42px)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:#fff;border:1px solid var(--line);padding:9px 18px;border-radius:99px;font-size:14px;font-weight:500}
+.chip.on,.chip:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(120,50,80,.1)}
+.card .im{position:relative;aspect-ratio:1;background:var(--blush);cursor:pointer;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card .im img+img{position:absolute;inset:0;opacity:0}
+.card:hover .im img+img{opacity:1}
+.off{position:absolute;top:12px;left:12px;background:var(--rose);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px}
+.off.out{background:var(--mute)}
+.card .bd{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .k{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.card h3{font-family:Inter;font-size:15px;font-weight:600;line-height:1.35}
+.pr{display:flex;align-items:baseline;gap:8px;margin-top:auto;padding-top:6px}
+.pr b{font-size:19px}.pr s{color:var(--mute);font-size:14px}
+.add{margin-top:10px;background:var(--ink);color:#fff;border-radius:99px;padding:11px;font-weight:600;font-size:14px;transition:.2s}
+.add:hover{background:var(--rose)}
+.add.alt{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.why{background:var(--teal);color:#fff}
+.why h2{margin-bottom:34px;font-size:clamp(28px,3.6vw,42px)}
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wi{background:rgba(255,255,255,.1);border-radius:var(--r);padding:24px}
+.wi i{font-style:normal;font-size:30px;display:block;margin-bottom:10px}
+.wi h3{font-family:Inter;font-size:17px;margin-bottom:6px}
+.wi p{font-size:14px;opacity:.88}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.story img{border-radius:36px}
+.story h2{font-size:clamp(30px,4vw,48px);margin-bottom:16px}
+.story p{color:var(--mute);margin-bottom:14px;font-size:17px}
+.facts{display:flex;gap:26px;margin-top:22px}
+.facts b{display:block;font-family:Fraunces;font-size:30px;color:var(--rose)}
+.facts span{font-size:13px;color:var(--mute)}
+.range{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shops{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.shop{border:1px solid var(--line);border-radius:var(--r);padding:26px;background:var(--bg);transition:.2s}
+.shop:hover{border-color:var(--rose);transform:translateY(-3px)}
+.shop h3{font-size:22px;margin-bottom:6px}.shop p{color:var(--mute);font-size:14px;margin-bottom:14px}
+.shop span{color:var(--rose-d);font-weight:600;font-size:14px}
+.news{background:var(--blush);text-align:center;border-radius:36px;padding:54px 24px;margin:0 20px}
+.news h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:10px}
+.news p{color:var(--mute);margin-bottom:22px}
+.news form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.news input{padding:14px 20px;border-radius:99px;border:1px solid var(--line);min-width:260px;font:inherit}
+footer{padding:48px 0 30px;font-size:14px;color:var(--mute)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+.fg img{height:44px;margin-bottom:12px}
+.fg h4{color:var(--ink);margin-bottom:10px;font-size:14px}
+.fg a{display:block;padding:3px 0}.fg a:hover{color:var(--rose-d)}
+.copy{border-top:1px solid var(--line);padding-top:20px;font-size:13px}
+.ov{position:fixed;inset:0;background:rgba(43,34,48,.5);z-index:50;opacity:0;pointer-events:none;transition:.25s}
+.ov.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:#fff;z-index:60;transform:translateX(100%);transition:.3s;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:20px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:22px}.x{background:none;font-size:26px;line-height:1}
+.items{flex:1;overflow:auto;padding:12px 20px}
+.it{display:grid;grid-template-columns:70px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.it img{width:70px;height:70px;border-radius:12px;object-fit:cover}
+.it b{font-size:14px;display:block;line-height:1.3}
+.qty{display:inline-flex;align-items:center;gap:10px;margin-top:6px;border:1px solid var(--line);border-radius:99px;padding:2px 6px}
+.qty button{background:none;width:24px;height:24px;font-size:16px}
+.empty{text-align:center;color:var(--mute);padding:60px 0}
+.df{padding:20px;border-top:1px solid var(--line)}
+.tot{display:flex;justify-content:space-between;font-weight:600;font-size:18px;margin-bottom:6px}
+.note{font-size:12px;color:var(--mute);margin:8px 0 12px}
+.df .btn{display:block;text-align:center;width:100%;margin-bottom:8px;font-size:14px;padding:12px}
+.modal{position:fixed;inset:0;z-index:70;display:none;place-items:center;padding:16px}
+.modal.on{display:grid}
+.mb{background:#fff;border-radius:28px;max-width:900px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.mb .gal{background:var(--blush);padding:20px}
+.mb .gal .main{border-radius:18px;width:100%;aspect-ratio:1;object-fit:cover}
+.th{display:flex;gap:8px;margin-top:10px}.th img{width:56px;height:56px;border-radius:10px;object-fit:cover;cursor:pointer;border:2px solid transparent}.th img.on{border-color:var(--rose)}
+.mb .inf{padding:30px}
+.mb h2{font-size:26px;margin:6px 0 10px}
+.mb ul{padding-left:18px;color:var(--mute);font-size:14px;margin:14px 0 20px}
+.mb li{margin-bottom:6px}
+.mb .x{position:absolute;top:12px;right:16px;background:#fff;border-radius:99px;width:36px;height:36px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,80px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:99px;z-index:90;transition:.3s;font-size:14px}
+.toast.on{transform:translate(-50%,0)}
+@media(max-width:960px){
+  .grid{grid-template-columns:repeat(2,1fr)}.wg,.cats{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap,.story .wrap{grid-template-columns:1fr}.links{display:none}
+  .shops{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.mb{grid-template-columns:1fr}
+  .badge{left:10px}
+}
+@media(max-width:520px){.grid{gap:12px}.card .bd{padding:12px}.cats{grid-template-columns:1fr}.pr b{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="bar">🌿 Free discreet packaging on every order · Made in Jaipur, India</div>
+<header><div class="wrap nav">
+  <a href="#top"><img class="logo" src="img/logo.png" alt="Potent Hygiene"></a>
+  <nav class="links"><a href="#shop">Shop</a><a href="#why">Why Potent</a><a href="#story">Our story</a><a href="#buy">Where to buy</a></nav>
+  <button class="cartbtn" id="openCart">Bag <b id="cnt">0</b></button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="tag">Organic · Rash-free · Toxin-free</span>
+    <h1>Comfort, care & <em>embracing</em> your natural self.</h1>
+    <p>A new era of hygiene, thoughtfully designed for every cycle, every commute and every day in between.</p>
+    <div class="cta"><a class="btn" href="#shop">Shop the range</a><a class="btn ghost" href="#story">Our story</a></div>
+    <div class="trust"><span>Dermatologically tested</span><span>pH balanced</span><span>Cruelty-free</span></div>
+  </div>
+  <div class="herovis">
+    <img src="img/pads-xl-1.jpg" alt="Ovy XL organic pads">
+    <img src="img/cup-1.jpg" alt="Potent menstrual cup">
+    <div class="badge">Ovy XL pads<small>Now ₹267 · 58% off</small></div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="cats" id="cats"></div></div>
+
+<section id="shop"><div class="wrap">
+  <div class="sh"><h2>Shop Potent Hygiene</h2><div class="filters" id="filters"></div></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <h2>Gentle on you. Kind to the planet.</h2>
+  <div class="wg">
+    <div class="wi"><i>🌸</i><h3>Rash-free comfort</h3><p>Breathable, feather-soft top layers that are non-irritant and pH balanced.</p></div>
+    <div class="wi"><i>🧪</i><h3>Toxin & fragrance free</h3><p>No harsh chemicals, dyes or added fragrances. Just clean protection.</p></div>
+    <div class="wi"><i>💧</i><h3>Leak-lock protection</h3><p>Super-absorbent cores and channel barriers for worry-free wear.</p></div>
+    <div class="wi"><i>🌱</i><h3>Planet-friendly</h3><p>Biodegradable, compostable and reusable choices that cut waste.</p></div>
+  </div>
+</div></section>
+
+<section class="story" id="story"><div class="wrap">
+  <img src="img/story-notnot.jpg" alt="What a period is not">
+  <div>
+    <span class="tag">Our story</span>
+    <h2>Periods aren't a taboo. They're just part of life.</h2>
+    <p>Potent Hygiene is a bootstrapped brand from Jaipur on a mission to make sustainable, thoughtfully designed hygiene solutions that work for people of every age and every lifestyle.</p>
+    <p>From the Ovy range of organic pads to menstrual cups, panty liners and on-the-go essentials, everything we make is built around comfort, confidence and care.</p>
+    <div class="facts"><div><b>2023</b><span>Founded</span></div><div><b>Jaipur</b><span>Made in India</span></div><div><b>4.8K+</b><span>Instagram family</span></div></div>
+  </div>
+</div></section>
+
+<section class="range"><div class="wrap">
+  <div class="sh"><h2>Real moods. Real support.</h2></div>
+  <div class="story" style="padding:0"><div class="wrap" style="padding:0;gap:40px">
+    <div><p style="font-size:19px;color:var(--ink)">Whatever your period brings, mood swings, cramps or a craving for chocolate, you deserve products that keep up with you.</p><p>Follow <a href="https://www.instagram.com/potenthygiene/" target="_blank" rel="noopener" style="color:var(--rose-d);font-weight:600">@potenthygiene</a> for period facts, myth-busting and everyday hygiene tips.</p><a class="btn" href="https://www.instagram.com/potenthygiene/" target="_blank" rel="noopener">Follow on Instagram</a></div>
+    <img src="img/story-moods.jpg" alt="When your period is coming">
+  </div></div>
+</div></section>
+
+<section id="buy"><div class="wrap">
+  <div class="sh"><h2>Also find us on</h2></div>
+  <div class="shops">
+    <a class="shop" target="_blank" rel="noopener" href="https://www.amazon.in/stores/PotentHygiene/page/18678868-B6F1-4388-A566-62231A1FE8D5"><h3>Amazon.in</h3><p>Our full brand store with the complete range.</p><span>Visit store →</span></a>
+    <a class="shop" target="_blank" rel="noopener" href="https://www.flipkart.com/ovy-potent-hygiene-xl-sanitary-napkin-pads-women-rash-free-pads-280mm-21-4-liners-pad/p/itm578af00805851?pid=SPPHQCW6QMDHTQU2"><h3>Flipkart</h3><p>Ovy XL pads with Cash on Delivery available.</p><span>Shop Ovy →</span></a>
+    <a class="shop" target="_blank" rel="noopener" href="https://www.instagram.com/potenthygiene/"><h3>Instagram</h3><p>Tips, launches and period facts.</p><span>@potenthygiene →</span></a>
+  </div>
+</div></section>
+
+<div class="news"><h2>Join the Potent circle</h2><p>Period tips, launches and offers. No spam, ever.</p>
+<form id="nf"><input type="email" required placeholder="Your email address"><button class="btn" type="submit">Subscribe</button></form></div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><img src="img/logo.png" alt="Potent Hygiene"><p>Sustainable, thoughtfully designed hygiene solutions. Jaipur, India.</p></div>
+    <div><h4>Shop</h4><a href="#shop" data-f="Pads">Pads</a><a href="#shop" data-f="Cups & Liners">Cups & Liners</a><a href="#shop" data-f="Travel">Travel essentials</a></div>
+    <div><h4>Company</h4><a href="#story">Our story</a><a href="https://inc42.com/company/potent-hygiene/" target="_blank" rel="noopener">Inc42 profile</a><a href="http://www.linkedin.com/company/potent-hygiene" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div><h4>Connect</h4><a href="https://www.instagram.com/potenthygiene/" target="_blank" rel="noopener">Instagram</a><a href="https://www.amazon.in/stores/PotentHygiene/page/18678868-B6F1-4388-A566-62231A1FE8D5" target="_blank" rel="noopener">Amazon store</a></div>
+  </div>
+  <div class="copy">© 2026 Potent Hygiene (Potent Wellness Solutions LLP). Product prices as listed on marketplaces and may vary.</div>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer">
+  <div class="dh"><h3>Your bag</h3><button class="x" id="closeCart">×</button></div>
+  <div class="items" id="items"></div>
+  <div class="df"><div class="tot"><span>Subtotal</span><span id="sub">₹0</span></div>
+    <p class="note">Orders are fulfilled through our marketplace stores. Tap below to complete each item on Amazon.</p>
+    <div id="checkout"></div></div>
+</aside>
+<div class="modal" id="modal"><div class="mb" id="mb"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const AMZ="https://www.amazon.in/dp/";
+const P=[
+ {id:"xl",cat:"Pads",name:"Ovy XL Organic Sanitary Pads, Rash-free, 280mm (21 pads + 4 liners)",price:267,mrp:629,imgs:["pads-xl-1","pads-xl-2","pads-xl-3"],
+  buy:"https://www.flipkart.com/ovy-potent-hygiene-xl-sanitary-napkin-pads-women-rash-free-pads-280mm-21-4-liners-pad/p/itm578af00805851?pid=SPPHQCW6QMDHTQU2",store:"Flipkart",
+  pts:["Rash-free, dermatologically tested, pH balanced","XL 280mm: ultra-thin, ultra-absorbent, extra-wide back","Instant lock core for leak-proof comfort","21 pads + 4 liners with disposal covers"]},
+ {id:"l",cat:"Pads",name:"Ovy Organic Large Sanitary Pads, Regular Flow (21 pads + 4 liners)",price:378,imgs:["pads-l-1"],buy:AMZ+"B0HJVDNT1W",store:"Amazon",
+  pts:["Long 240mm pad with wider back for regular to heavy flow","Breathable, feather-soft organic top layer","Free from chemicals, fragrances and dyes","Includes 4 liners and 25 compostable disposal bags"]},
+ {id:"liner40",cat:"Cups & Liners",name:"Daily Wear Panty Liners, Ultra Thin 1mm, Toxin Free (Pack of 40)",price:239,imgs:["liner-1","liner-2","liner-3"],buy:AMZ+"B0HJCM3ZDF",store:"Amazon",
+  pts:["Invisible 1mm ultra-thin comfort","Hypoallergenic, chemical-free materials","Breathable top-sheet keeps you fresh all day","Stays securely in place"]},
+ {id:"liner60",cat:"Cups & Liners",name:"Daily Wear Panty Liners, Ultra Thin 1mm, Toxin Free (Pack of 60)",price:328,imgs:["liner-1","liner-2","liner-3"],buy:AMZ+"B0HJCK7QCJ",store:"Amazon",
+  pts:["Best value 60-liner pack","Invisible 1mm ultra-thin comfort","Hypoallergenic and gentle on sensitive skin","Stays securely in place"]},
+ {id:"cup",cat:"Cups & Liners",name:"Reusable Menstrual Cup, Medical Grade Silicone, Teen XS Pink",price:399,mrp:599,imgs:["cup-1"],buy:AMZ+"B0HJCV97FY",store:"Amazon",
+  pts:["Ultra-soft, 100% medical grade silicone","8 to 10 hours of leak-proof protection","Odour, rash and itch free","Reusable for years, comes with a cotton pouch"]},
+ {id:"funnel",cat:"Travel",name:"Pee Funnel: Reusable Stand-to-Pee Device for Women",price:299,mrp:599,imgs:["funnel-1","funnel-2","funnel-3"],buy:AMZ+"B0HJ6FFG8C",store:"Amazon",
+  pts:["Soft, flexible, toxin-free silicone","Pee standing up, no contact with toilet seats","Ideal for travel, trekking and pregnancy","Easy to rinse, fold and store in the cotton pouch"]},
+ {id:"bags",cat:"Travel",name:"Emergency Portable Pee & Puke Bags (12 bags)",out:1,imgs:["bags-1","bags-2"],buy:AMZ+"B0D9BP4NQW",store:"Amazon",
+  pts:["Disposable urine and vomit bags","Self-seal strip to prevent leaks","For travel, traffic jams, pregnancy and kids","Unisex ergonomic design"]},
+ {id:"seat",cat:"Travel",name:"Waterproof Disposable Toilet Seat Covers (90 sheets)",out:1,imgs:["seat-1","seat-2","seat-3"],buy:AMZ+"B0D86RGBP6",store:"Amazon",
+  pts:["Biodegradable and waterproof","Fits all standard toilet seats","A hygienic barrier in public restrooms","Safe for adults and kids"]}
+];
+const CATS=[["Pads","Ovy organic pads","pads-xl-1"],["Cups & Liners","Cups & liners","cup-1"],["Travel","Travel essentials","funnel-1"],["All","Shop everything","seat-1"]];
+const $=s=>document.querySelector(s), fmt=n=>"₹"+n.toLocaleString("en-IN");
+let filter="All", cart=[];
+try{cart=JSON.parse(localStorage.getItem("ph_cart")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("ph_cart",JSON.stringify(cart))}catch(e){}};
+const get=id=>P.find(p=>p.id===id);
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1800)}
+function renderCats(){ $("#cats").innerHTML=CATS.map(c=>`<button class="cat" data-f="${c[0]}"><img src="img/${c[2]}.jpg" alt=""><span><b>${c[1]}</b><small>View range</small></span></button>`).join("") }
+function renderFilters(){ $("#filters").innerHTML=["All","Pads","Cups & Liners","Travel"].map(f=>`<button class="chip ${f===filter?"on":""}" data-f="${f}">${f}</button>`).join("") }
+function renderGrid(){
+  $("#grid").innerHTML=P.filter(p=>filter==="All"||p.cat===filter).map(p=>`
+  <article class="card"><div class="im" data-q="${p.id}"><img src="img/${p.imgs[0]}.jpg" alt="${p.name}" loading="lazy">${p.imgs[1]?`<img src="img/${p.imgs[1]}.jpg" alt="" loading="lazy">`:""}
+  ${p.out?`<span class="off out">Back soon</span>`:p.mrp?`<span class="off">${Math.round((1-p.price/p.mrp)*100)}% off</span>`:""}</div>
+  <div class="bd"><span class="k">${p.cat}</span><h3>${p.name}</h3>
+  <div class="pr">${p.out?`<span style="color:var(--mute);font-size:14px">Currently unavailable</span>`:`<b>${fmt(p.price)}</b>${p.mrp?`<s>${fmt(p.mrp)}</s>`:""}`}</div>
+  ${p.out?`<a class="add alt" style="text-align:center" target="_blank" rel="noopener" href="${p.buy}">View on Amazon</a>`:`<button class="add" data-add="${p.id}">Add to bag</button>`}</div></article>`).join("")
+}
+function setFilter(f){filter=f;renderFilters();renderGrid()}
+function renderCart(){
+  const n=cart.reduce((a,c)=>a+c.q,0);$("#cnt").textContent=n;
+  const sub=cart.reduce((a,c)=>a+get(c.id).price*c.q,0);$("#sub").textContent=fmt(sub);
+  $("#items").innerHTML=cart.length?cart.map(c=>{const p=get(c.id);return `<div class="it"><img src="img/${p.imgs[0]}.jpg" alt=""><div><b>${p.name}</b><div class="qty"><button data-m="${p.id}">−</button>${c.q}<button data-p="${p.id}">+</button></div></div><b>${fmt(p.price*c.q)}</b></div>`}).join(""):`<div class="empty">Your bag is empty.<br>Treat yourself to something kind. 🌸</div>`;
+  $("#checkout").innerHTML=cart.map(c=>{const p=get(c.id);return `<a class="btn" target="_blank" rel="noopener" href="${p.buy}">Buy on ${p.store}: ${p.name.split(",")[0].slice(0,28)}…</a>`}).join("");
+  save();
+}
+function add(id){const c=cart.find(x=>x.id===id);c?c.q++:cart.push({id,q:1});renderCart();toast("Added to your bag")}
+function openCart(o){$("#drawer").classList.toggle("on",o);$("#ov").classList.toggle("on",o)}
+function quick(id){
+  const p=get(id);
+  $("#mb").innerHTML=`<button class="x" data-close>×</button><div class="gal"><img class="main" id="main" src="img/${p.imgs[0]}.jpg" alt=""><div class="th">${p.imgs.map((i,k)=>`<img class="${k?"":"on"}" src="img/${i}.jpg" data-th="${i}" alt="">`).join("")}</div></div>
+  <div class="inf"><span class="k" style="color:var(--teal);font-size:12px;font-weight:600;text-transform:uppercase">${p.cat}</span><h2>${p.name}</h2>
+  <div class="pr">${p.out?"<span style='color:var(--mute)'>Currently unavailable</span>":`<b style="font-size:26px">${fmt(p.price)}</b>${p.mrp?`<s>${fmt(p.mrp)}</s>`:""}`}</div>
+  <ul>${p.pts.map(t=>`<li>${t}</li>`).join("")}</ul>
+  ${p.out?"":`<button class="btn" data-add="${p.id}" data-close style="width:100%">Add to bag</button>`}
+  <a class="btn ghost" style="width:100%;text-align:center;margin-top:10px" target="_blank" rel="noopener" href="${p.buy}">View on ${p.store}</a></div>`;
+  $("#modal").classList.add("on");$("#ov").classList.add("on");
+}
+function closeAll(){$("#modal").classList.remove("on");openCart(false)}
+document.addEventListener("click",e=>{
+  const t=e.target;
+  const f=t.closest("[data-f]");if(f){setFilter(f.dataset.f);if(f.classList.contains("cat"))$("#shop").scrollIntoView()}
+  const a=t.closest("[data-add]");if(a)add(a.dataset.add);
+  const q=t.closest("[data-q]");if(q)quick(q.dataset.q);
+  const th=t.closest("[data-th]");if(th){$("#main").src="img/"+th.dataset.th+".jpg";document.querySelectorAll(".th img").forEach(i=>i.classList.toggle("on",i===th))}
+  const pl=t.closest("[data-p]");if(pl)add(pl.dataset.p);
+  const m=t.closest("[data-m]");if(m){const c=cart.find(x=>x.id===m.dataset.m);if(c&&--c.q<=0)cart=cart.filter(x=>x!==c);renderCart()}
+  if(t.closest("[data-close]")||t.id==="modal")$("#modal").classList.remove("on"),$("#ov").classList.remove("on");
+});
+$("#openCart").onclick=()=>openCart(true);$("#closeCart").onclick=()=>openCart(false);$("#ov").onclick=closeAll;
+$("#nf").onsubmit=e=>{e.preventDefault();e.target.reset();toast("Thank you for joining! 💖")};
+document.addEventListener("keydown",e=>e.key==="Escape"&&closeAll());
+renderCats();renderFilters();renderGrid();renderCart();
+</script>
+</body>
+</html>
